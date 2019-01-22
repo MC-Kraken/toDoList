@@ -53,10 +53,12 @@ div.setAttribute('id', 'div');
 document.body.appendChild(div)
 
 //FUNCTION FOR MAKE A LIST BUTTON//
+let counter = 0
 function makeList() {
-    for (i = 0; i < list.length; i++) {     
+    for (i = counter; i < list.length; i++) {   
+        counter++  
         document.getElementById('input').value
-        document.getElementById('div').innerHTML = document.getElementById('div').innerHTML + '\n' + '- ' + list[i++];
+        document.getElementById('div').innerHTML = document.getElementById('div').innerHTML + '<br>' + '- ' + list[i];
         console.log(list[i]);
 }};
 
